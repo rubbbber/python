@@ -1,6 +1,7 @@
 from distutils.command.install_egg_info import to_filename
 from math import factorial
 from sqlite3 import ProgrammingError
+from turtle import st
 from secondcase import add,mul
 from multiprocessing import Process,cpu_count
 # import functools
@@ -196,6 +197,65 @@ import time
 # foods = list()
 # while food := input("what's your food? ")!="quit":
 #     foods.append(food)
+
+#scope
+# LEGB:L=local,E=enclosing,G=global,B=built-in
+# name = "Bro"
+# def display_name():
+#     name = "Code"
+#     print(name)
+# display_name()
+# print(name)
+
+#keyboard argument
+# def hello(first,middle,last):
+#     print("Hello "+first+" "+middle+" "+last)
+# hello(last="Code",middle="Dude",last="Bro")
+
+#dictionary
+# capitals = {'USA':'Washington DC',
+#             'India':'New Dehli',
+#             'China':'Beijing',
+#             'Russia':'Moscow',}
+# capitals.update({'Germany':'Prais'})
+# print(capitals['Germany'])
+# print(capitals.get('Germany'))
+# print(capitals.keys())
+# print(capitals.values())
+# print(capitals.items())
+# for key,value in capitals.items():
+#     print(key,value)
+
+#set
+# utensils = {"fork","spoon","knife"}
+# dishes = {"bowl","plate","cup","knife"}
+# utensils.add("napkin")
+# utensils.remove("fork")
+# utensils.clear()
+# dishes.update(utensils)
+# dinner_table = utensils.union(dishes)
+# print(utensils.intersection(dishes))
+# print(utensils)
+# for x in dinner_table:
+#     print(x)
+
+#tuple = collection which is ordered and unchangeable
+#        used to group together related data
+# student = ("Bro",21,"male")
+# print(student.count("Bro"))
+# print(student.index(21))
+
+#2D lists = a list of lists
+# drinks = ["coffee","soda","tea"]
+# dinner = ["pizza","hamburger","hotdog"]
+# dessert = ["cake","ice cream"]
+# food = [drinks,dinner,dessert]
+# lens = lambda date:len(date[i])
+# for i in range(0,len(food)):
+#     for j in range(0,lens(food)):
+#         print(food[i][j],end = "\t")
+#         if j == lens(food)-1:
+#             print("")
 
 #list = used to store multiple items in a single variable
 # food = ["pizza","hamburger","hotdog","spaghetti","pudding"]
