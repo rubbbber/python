@@ -4,7 +4,7 @@ from sqlite3 import ProgrammingError
 from secondcase import add,mul
 from multiprocessing import Process,cpu_count
 # import functools
-# import time
+import time
 # print(cpu_count())
 
 #if __name__ == '__main__'
@@ -196,3 +196,56 @@ from multiprocessing import Process,cpu_count
 # foods = list()
 # while food := input("what's your food? ")!="quit":
 #     foods.append(food)
+
+#list = used to store multiple items in a single variable
+# food = ["pizza","hamburger","hotdog","spaghetti","pudding"]
+# food[0] = "sushi"
+# food.append("ice cream")
+# food.remove("hotdog")
+# food.insert(0,"cake")
+# food.sort(reverse = True)
+# for i in food:
+#     print(i)
+
+#range
+# for i in range(10):
+#     print(i+1)
+# for i in range(50,100+1,2):
+#     print(i)
+# for i in "Bro Code":
+#     print(i)
+# for seconds in range(10,0,-1):
+#     print(seconds)
+#     time.sleep(1)
+# print("Happy New Year!!")
+
+#string
+#slicing = create a substring by elements from another string
+#          indexing[] or slice()
+#          [start:stop:step]
+#1
+# name = "Bro Code"
+# first_name = name[:3]
+# last_name = name[4:]
+# reversed_name = name[::-1]
+# print(first_name)
+# print(last_name)
+# print(reversed_name)
+#2
+# website1 = "http://google.com"
+# website2 = "http://wikpedie.com"
+# slice = slice(7,-4)
+# print(website1[slice])
+# print(website2[slice])
+
+#print
+# name = "Bro"
+# print(len(name))
+# print(name.find("o"))
+# print(name.capitalize())
+# print(name.upper())
+# print(name.lower())
+# print(name.isdigit())
+# print(name.count("o"))
+# print(name.replace("o","e"))
+# print(name*3)
