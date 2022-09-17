@@ -1,11 +1,10 @@
 from distutils.command.install_egg_info import to_filename
 from math import factorial
-from sqlite3 import ProgrammingError
 from turtle import st
 from secondcase import add,mul
 from multiprocessing import Process,cpu_count
 # import functools
-import time
+# import time
 # print(cpu_count())
 
 #if __name__ == '__main__'
@@ -197,6 +196,67 @@ import time
 # foods = list()
 # while food := input("what's your food? ")!="quit":
 #     foods.append(food)
+
+# import random
+# x = random.randint(1,6)
+# y = random.random()
+# mylist = ['rock','paper','scissors']
+# z = random.choice(mylist)
+# cards = [2,3,4,5,6,7,8,9,'J','Q','K','A']
+# random.shuffle(cards)
+# print(cards)
+
+#str.format() = optional method that gives users
+#               more control when displaying output
+#1
+# animal = "cow"
+# item = "moon"
+# print("The "+animal+"jumped over the "+item)
+# print("The {} jumped over the {}".format(animal,item))
+# print("The {1} jumped over the {1}".format(animal,item))#positional argument
+# print("The {animal} jumped over the {animal}".format(animal = "cow",item = "moon"))
+# #keyword argument
+#2
+# name = "Bro"
+# pi = 3.1415926
+# number = 100000
+# print("Hello,my name is {}".format(name))
+# print("Hello,my name is {:10}".format(name))
+# print("Hello,my name is {:<10}".format(name))
+# print("Hello,my name is {:>10}".format(name))
+# print("Hello,my name is {:^10}".format(name))
+# print("The number pi is {:.3f}".format(pi))
+# print("The number is {:,}".format(number))
+# print("The number is {:b}".format(number))
+# print("The number is {:o}".format(number))
+# print("The number is {:X}".format(number))
+# print("The number is {:E}".format(number))
+
+#**kwargs = parameter that will pack all argument into a dictionary
+#           useful so that a function can accept a varying amount of keyward
+# def hello(**kwargs):
+#     # print("Hello "+kwargs['first']+" "+kwargs['last'])
+#     print("Hello",end=" ")
+#     for key,value in kwargs.items():
+#         print(value,end=" ")
+# hello(first="Bro",middle="Dude",last="Code")
+
+#args = parameter that will pack all argument into a tuple
+#       useful so that a function can accept a varying amount of argument
+#1
+# def add(*stuff):
+#     sum = 0
+#     for i in stuff:
+#         sum+=i
+#     return sum
+# print(add(1,2,3,4,5,6))
+#2
+# def link(*stuff):
+#     sum = []
+#     for i in stuff:
+#         sum.append(i)
+#     return sum
+# print(link(["Bro"],"Code"))
 
 #scope
 # LEGB:L=local,E=enclosing,G=global,B=built-in
