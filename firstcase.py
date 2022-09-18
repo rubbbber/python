@@ -11,6 +11,90 @@ import re
 # str = "abbabaabbaa"
 # print(re.findall(r'a..b',str))
 
+#Object Oriented Programming
+
+#method overriding
+# class Animal:
+#     def eat(self):
+#         print("This animal is eating")
+# class Rabbit:
+#     def eat(self):
+#         print("This rabbit is eating")
+# rabbit = Rabbit()
+# rabbit.eat()
+# # stdout:This rabbit is eating
+
+#multiple inheritance = whea child class is derived from
+#                       more than one parent class
+# class Prey:
+#     def flee(self):
+#         print("This animal flees")
+# class Predator:
+#     def hunt(self):
+#         print("This animal hunts")
+# class Fish(Prey,Predator):
+#     pass
+
+#multi-level inheritance
+# class Orgnism:
+#     alive = True
+# class Animal(Orgnism):
+#     def eat(self):
+#         print("This animal is eating")
+# class Dog(Animal):
+#     def bark(self):
+#         print("This dog is barking")
+
+#inheritance
+# class Animal:#parent
+#     alive = True
+#     def eat(self):
+#         print("This animal is eating")
+#     def sleep(self):
+#         print("This animal is sleeping")
+# class Rabbit(Animal):#child
+#     def run(self):
+#         print("This rabbit is running")
+# class Fish(Animal):
+#     def swim(self):
+#         print("This fish is swimming")
+# class Hawk(Animal):
+#     def fly(self):
+#         print("This hawk is flying")
+# rabbit = Rabbit()
+# fish = Fish()
+# hawk = Hawk()
+# print(rabbit.alive)
+# fish.eat()
+
+# class Car:
+#     wheels = 4#all have
+#     def __init__(self,make,model,year,color):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.color = color
+#     def drive(self):
+#         print("This "+self.model+" is driving!")
+#     def stop(self):
+#         print("The car is stopping!")
+# car_1 = Car("Chevy","Corovette",2021,"blue")
+# print(car_1.color)
+# print(car_1.model)
+# print(car_1.year)
+# print(car_1.make)
+# car_1.drive()
+# car_1.stop()
+# Car.wheels = 2#change all
+# car_1.wheels = 2#only change car_1
+# print(Car.wheels)
+
+# from messages import hello,bye# from messages import *
+# hello()
+# bye()
+# import messages as msg
+# msg.hello()
+# msg.bye()
 
 #if __name__ == '__main__'
 # 1.Module can be run as a standalone Program
