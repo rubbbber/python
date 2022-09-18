@@ -3,9 +3,14 @@ from math import factorial
 from turtle import st
 from secondcase import add,mul
 from multiprocessing import Process,cpu_count
+import re
 # import functools
 # import time
 # print(cpu_count())
+
+# str = "abbabaabbaa"
+# print(re.findall(r'a..b',str))
+
 
 #if __name__ == '__main__'
 # 1.Module can be run as a standalone Program
@@ -196,6 +201,94 @@ from multiprocessing import Process,cpu_count
 # foods = list()
 # while food := input("what's your food? ")!="quit":
 #     foods.append(food)
+
+#deletefile&dictionary&tree
+# import os
+# import shutil
+# path = '/Users/littleprince/Desktop/test'
+# try:
+#     os.remove(path)#remove a file
+#     os.rmkir(path)#remove an empty dictionary
+#     shutil.rmtree(path)#monstrous delete a dictionary cantaining files
+# except FileNotFoundError:
+#     print("That file was not found!")
+# except PermissionError:
+#     print("You do not have permission!")
+# except OSError:
+#     print("You can't delete an empty dictionary")
+# else:
+#     print(path + "is deleted")
+
+#movefile&dictionary
+# import os
+# source = 'test.txt'
+# destination = '/Users/littleprince/Desktop/move.txt'
+# try:
+#     if os.path.exists(destination):
+#         print("This file is already there")
+#     else:
+#         os.replace(source,destination)
+#         print("move success!")
+# except FileNotFoundError as e:
+#     print(e)
+#     print("The file does not exist")
+#replace source to 'test'-a dictionary can also succeed
+
+#copyfile() = copies contents of a file
+#copy() = copyfile() + permission mode + destination can be a dirtionary
+#copy2()= copy + copies metadata(file's creation and modification times)
+# import shutil
+# shutil.copy2("test.txt",'/Users/littleprince/Desktop')
+#src,dst default mode is in the same console
+
+#open function
+#"r" - Read mode (which is a default mode) - it opens a file
+#      for reading the data and if the file does not exist,
+#      it return an error
+#"a" - Append mode - it opens a file for appending the data,
+#      it creates a new file if the file does not exist
+#"w" - Write mode - it opens a file in write mode to write data
+#      in it,if the file is opened in write mode then existing 
+#      data will be removed,it also created a file,if the file
+#      does not exist
+#"x" - Creates a file - if the file already exists,it returns an error
+# import os
+#1
+# test = "Uh oh This text has been overwritten"
+# with open("/Users/littleprince/begin to believe/test.txt",'a') as file:
+# with open("test.txt",'a') as file:
+#     file.write(test)
+# with open("test.txt") as file:
+#     print(file.read())###not use except handling
+#2
+# with open("test.tx",'a') as file:
+#     file.write(test) 
+
+#file detection
+# path = "/Users/littleprince/begin to believe/test.txt"
+# if os.path.exists(path):
+#     print("That location exists!")
+#     if os.path.isfile(path):
+#         print("That is a file")
+# else:
+#     print("That location doesn't exists!")
+
+#try&exception statement
+# try:
+#     numerator = int(input("Enter a number to be divided: "))
+#     denominator = int(input("Enter a number divide by: "))
+#     result = numerator / denominator
+# except ZeroDivisionError as e:
+#     print(e)
+#     print("You can't divide by zero! idiot!")
+# except ValueError as e:
+#     print(e)
+#     print("Enter only numbers plz")
+# except Exception as e:
+#     print(e)
+#     print("something went wrong :(")
+# else:
+#     print(result)
 
 # import random
 # x = random.randint(1,6)
