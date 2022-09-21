@@ -7,7 +7,72 @@ from multiprocessing import Process,cpu_count
 # import time
 # print(cpu_count())
 
-#Object Oriented Programming
+#thread = a flow of execution. Like a seoarate order of instructons
+# to be continued
+
+#-----------------------------Object Oriented Programming-------------------------------------
+#duck typing = concept where the class of an object is less important than methods attributes
+#              class type is not checked if minimum methods/attribute are present
+#              "if it makes like a duck, and it quacks like a duck, then it must a duck"
+# class Duck:
+#     def walk(self):
+#         print("The duck is walking")
+#     def talk(self):
+#         print("The duck is qwuacking")
+# class Chicken:
+#     def walk(self):
+#         print("The chilken is walking")
+#     def talk(self):
+#         print("The chilken is clucking")
+#     def fly(self):
+#         print("The chilken is flying")
+# class Person():
+#     def catch(self,duck):
+#         duck.walk()
+#         duck.talk()
+#         print("You caught the critter!")
+# duck = Duck()
+# chilken = Chicken()
+# person = Person()
+# person.catch(chilken)
+
+#objects as arguments
+# class Car:
+#     color = None
+# def change_color(vehicle,color):
+#     vehicle.color = color
+# car_1 = Car()
+# car_2 = Car()
+# car_3 = Car()
+# change_color(car_1,"blue")
+# change_color(car_2,"yellow")
+# change_color(car_3,"red")
+# print(car_1.color)
+# print(car_2.color)
+# print(car_3.color)
+
+#abstract class = a class which contains one or more abstract methods
+#abstract method = a method that has a declaration but does not have an implementation
+#Prevents a user from creating an object of class
+#+compels a user to override abstract methods in a child class
+# from abc import ABC,abstractmethod
+# class Vehicle(ABC):
+#     @abstractmethod
+#     def go(self):
+#         pass
+#     @abstractmethod
+#     def stop(self):
+#         pass
+# class Car(Vehicle):#correct
+#     def go(self):
+#         print("The car is going")
+#     def stop(self):
+#         print("The car is stopped")
+# class Motocycle(Vehicle):#false because of the lack of definition
+#     def go(self):
+#         print("The motocycle is going")
+# vehicle = Vehicle()#correct
+# vehicle.go()#false because you cannot use the inner funct in abstract
 
 #super() = function used to give access to the methods of a parent class
 #          returns a temporary object of a parent class when used
@@ -126,6 +191,7 @@ from multiprocessing import Process,cpu_count
 # Car.wheels = 2#change all
 # car_1.wheels = 2#only change car_1
 # print(Car.wheels)
+# --------------------------------------------------------------------------------------------
 
 # from messages import hello,bye# from messages import *
 # hello()
@@ -320,6 +386,7 @@ from multiprocessing import Process,cpu_count
 # print(pass_student)
 
 #海象符
+# print(happy := True)
 # foods = list()
 # while food := input("what's your food? ")!="quit":
 #     foods.append(food)
