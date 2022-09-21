@@ -3,15 +3,53 @@ from math import factorial
 from turtle import st
 from secondcase import add,mul
 from multiprocessing import Process,cpu_count
-import re
 # import functools
 # import time
 # print(cpu_count())
 
-# str = "abbabaabbaa"
-# print(re.findall(r'a..b',str))
-
 #Object Oriented Programming
+
+#super() = function used to give access to the methods of a parent class
+#          returns a temporary object of a parent class when used
+# class Rectangle:
+#     def __init__(self,length,width):
+#         self.length = length
+#         self.width = width
+#     def fun(self,*stuff):
+#         sum = 1
+#         for i in stuff:
+#             sum *= i
+#         return sum
+# class Square(Rectangle):
+#     def __init__(self,length,width):
+#         super().__init__(length,width)
+#         self.area = super().fun(self.length,self.width)
+# class Cube(Rectangle):
+#     def __init__(self,length,width,height):
+#         super().__init__(length,width)
+#         self.height = height
+#         self.volume =  super().fun(self.length,self.width,self.height)
+# area = Square(3,3)
+# cube = Cube(3,3,3)
+# print(area.area)
+# print(cube.volume)
+
+#method chainning = calling multiple methods sequentially
+#                   each call performs an action on the same object and returns self
+# class Car:
+#     def drive(self):
+#         print("U drive the car")
+#         return self
+#     def turn_on(self):
+#         print("U start the engine")
+#         return self
+#     def brake(self):
+#         print("U step on the brakes")
+#         return self
+# car = Car()
+# car.turn_on()\
+#     .drive()\
+#      .brake()
 
 #method overriding
 # class Animal:
