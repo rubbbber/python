@@ -1,14 +1,95 @@
 from distutils.command.install_egg_info import to_filename
 from math import factorial
+import multiprocessing
+from operator import countOf
 from turtle import st
 from secondcase import add,mul
-from multiprocessing import Process,cpu_count
 # import functools
-# import time
-# print(cpu_count())
 
-#thread = a flow of execution. Like a seoarate order of instructons
-# to be continued
+#Python multiprocessing
+# multiprocessing = running tasks in parallel on different cpu cores, bypasses GIL used for threading
+#                  multiprocessing = better for cpu bound tasks (heavy cpu usage) I
+#                   multithreading = better for io bound tasks (waiting around)
+# from multiprocessing import Process,cpu_count
+# import time
+# def counter(num):
+#     count = 0
+#     while count<num:
+#         count += 1
+# def main():
+#     start = time.perf_counter()
+#     a = Process(target=counter,args=(250000000,))
+#     b = Process(target=counter,args=(250000000,))
+#     c = Process(target=counter,args=(250000000,))
+#     d = Process(target=counter,args=(250000000,))
+#     a.start()
+#     b.start()
+#     c.start()
+#     d.start()
+#     a.join()
+#     b.join()
+#     c.join()
+#     d.join()
+#     end = time.perf_counter()
+#     print("finished in:",end-start,"s")
+#     print(cpu_count)
+# if __name__ == '__main__':
+#     main()
+
+#daenon thread = a thread that runs in the background, not important for program to run
+#              your program will not wait for daemon thread to complete before exiting
+#              non-daemon threads cannot normally be killed, stay alive until task is complete
+#              ex.background tasks, garbage collection, waiting for input,long running process
+# import threading
+# import time
+# def timer():
+#     print()
+#     count = 0
+#     while True:
+#         time.sleep(1)
+#         count+=1
+#         print("logged in for ",count,"seconds")
+# x = threading.Thread(target = timer,daemon=True)
+# x.start()
+# # x.setDaemon(True)
+# # print(x.isDaemon())
+# answer = input("Do you wish to exit?\n")
+#thread = a flow of execution. Like a seoarate order of instructons.
+#         However each thread takes a  turn running to achieve concurrency
+#         GIL = (golbal interpreter lock),
+#         allows only one thread to hold the control of the Python interpreter at any one time
+#cup bound = program/task spends most of it's time waiting for internal events(CPU interpreter)
+#            use multiprocessing
+#io bound = program/task spends most of it's time waiting for ecternal events(user interpreter)
+#           use multithreading
+# import threading
+# import time
+# def eat_breakfast():
+#     time.sleep(3)
+#     print("You eat breakfast")
+# def drink_coffee():
+#     time.sleep(4)
+#     print("You drink coffee")
+# def study():
+#     time.sleep(5)
+#     print("You finish studying")
+# start = time.perf_counter()
+# x = threading.Thread(target=eat_breakfast,args=())
+# x.start()
+# y = threading.Thread(target=drink_coffee,args=())
+# y.start()
+# z = threading.Thread(target=study,args=())
+# z.start()
+# x.join()
+# y.join()
+# z.join()
+# end = time.perf_counter()
+# # eat_breakfast()
+# # drink_coffee()
+# # study()
+# print(threading.active_count())
+# print(threading.enumerate())
+# print(end-start)
 
 #-----------------------------Object Oriented Programming-------------------------------------
 #duck typing = concept where the class of an object is less important than methods attributes
