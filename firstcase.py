@@ -1,10 +1,7 @@
-from distutils.command.install_egg_info import to_filename
-from math import factorial
-import multiprocessing
-from operator import countOf
-from turtle import st
-from secondcase import add,mul
-# import functools
+# from secondcase import add,mul
+from tkinter import *
+# widgets = GUI elements: buttons, testboxes, labels, images
+# windows = serves as a container to hold or contain these widgets
 
 #Python multiprocessing
 # multiprocessing = running tasks in parallel on different cpu cores, bypasses GIL used for threading
@@ -323,11 +320,12 @@ from secondcase import add,mul
 #     print(i)
 
 #reduce function
+# import functools
 # 1
 # letters = ["H","E","L","L","O"]
 # word = functools.reduce(lambda x,y:x+y,letters)
 # print(word)
-#2
+# 2
 # factorial = [1,2,3,4,5]
 # result = functools.reduce(lambda x,y:x*y,factorial)
 # print(result)
