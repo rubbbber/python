@@ -88,7 +88,28 @@ from tkinter import *
 # print(threading.enumerate())
 # print(end-start)
 
+#yield用法
+# def Fab(max):
+#     n, a, b = 0, 0, 1
+#     while n < max:
+#         yield b
+#         a, b = b, a+b
+#         n += 1
+# for n in Fab(5):
+#     print(n)
+
 #-----------------------------Object Oriented Programming-------------------------------------
+#iter
+# class A:
+#     def __init__(self):
+#         self.a = [1,2,3,4,5]
+#     def __iter__(self):
+#         for i in range(len(self.a)):
+#             yield self.a[i]
+# a = A()
+# a = iter(a)
+# for i in range(5):
+#     print(next(a))
 #duck typing = concept where the class of an object is less important than methods attributes
 #              class type is not checked if minimum methods/attribute are present
 #              "if it makes like a duck, and it quacks like a duck, then it must a duck"
