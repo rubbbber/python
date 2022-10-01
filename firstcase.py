@@ -1,7 +1,30 @@
 # from secondcase import add,mul
 from tkinter import *
-# widgets = GUI elements: buttons, testboxes, labels, images
-# windows = serves as a container to hold or contain these widgets
+# window = Tk()
+# photo = PhotoImage(file='/Users/littleprince/Desktop/截屏2022-10-01 19.22.12.png')
+# label = Label(window,
+#             text="hello world",
+#             font=('Arial',40,'bold'),
+#             fg='green',
+#             bg='black',
+#             # relief=RAISED,
+#             padx=20,pady=20,
+#             image=photo,
+#             compound='top'
+#             )
+# label.pack()
+# # label.place(x=0,y=0)
+# window.mainloop()
+
+#widgets = GUI elements: buttons, testboxes, labels, images
+#windows = serves as a container to hold or contain these widgets
+# window = Tk()#instantiate an instance of a window
+# window.geometry("420x420")
+# window.title("Bro Code first")
+# icon = PhotoImage(file='/Users/littleprince/Desktop/截屏2022-09-26 23.48.03.png')
+# window.iconphoto(True,icon)
+# window.config(background='#5cfcff')
+# window.mainloop()#place window on computer screen, listen for events
 
 #Python multiprocessing
 # multiprocessing = running tasks in parallel on different cpu cores, bypasses GIL used for threading
